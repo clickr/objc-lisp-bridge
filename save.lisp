@@ -1,5 +1,5 @@
 (eval-when (:compile-toplevel :load-toplevel :execute) (load (compile-file "objc-runtime.asd")))
-(eval-when (:compile-toplevel :load-toplevel :execute) (ql:quickload :objc-runtime))
+(eval-when (:compile-toplevel :load-toplevel :execute) (ql:quickload '(:objc-runtime :bordeaux-threads :swank)))
 (eval-when (:compile-toplevel :load-toplevel :execute) (load (compile-file "demo-app.lisp")))
 
 #+sbcl

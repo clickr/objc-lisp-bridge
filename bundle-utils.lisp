@@ -68,7 +68,7 @@
                      (lambda (s hash-table)
                        (pprint-logical-block (s nil)
                          (princ "{"  s)
-                         (let ((v (fset:convert 'list (fset:convert 'fset:map hash-table))))
+                         (let ((v (alexandria:hash-table-alist hash-table)))
                            (when v
                              (pprint-logical-block (s v)
                                (pprint-indent :block 0 s)

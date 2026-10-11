@@ -8,9 +8,10 @@
   :depends-on (#:alexandria
                #:cffi
                #:cffi-libffi
+               #:closer-mop
                #:data-lens
-               #:fset
                #:fwoar-lisputils
+               #:named-readtables
                #:serapeum
                #:trivial-features
                #:trivial-main-thread
